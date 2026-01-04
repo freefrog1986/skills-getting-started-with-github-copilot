@@ -86,15 +86,34 @@ section h3 {
 }
 
 .participants-list {
-  list-style-type: disc;
-  padding-left: 25px;
+  list-style-type: none;
+  padding-left: 0;
   margin: 0;
 }
 
 .participants-list li {
-  padding: 3px 0;
+  padding: 8px 0;
   color: #555;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #c62828;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 3px;
+  transition: all 0.2s;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.delete-icon:hover {
+  background-color: #ffebee;
+  transform: scale(1.1);
 }
 
 .no-participants {
